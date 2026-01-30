@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>محمد هانی آقایی قمصری | وبسایت شخصی</title>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styless/style.css">
+<script src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -82,7 +83,7 @@
   <div class="contact-info">
 <p>
   ایمیل:
-  <a href="mailto://mohammadhaniaghaei2007@gmail.com">mohammadhaniaghaei2007@gmail.com</a>
+  <a href="mailto:mohammadhaniaghaei2007@gmail.com">mohammadhaniaghaei2007@gmail.com</a>
 </p>
 لینکدین:
 <a 
@@ -94,16 +95,27 @@ target="_blank">linkedin.com/in/mohammad-hani-aghaei-0a10513a9
 
 
   <hr>
+<form 
+  class="contact-form"
+  action="https://formsubmit.co/mohammadhaniaghaei2007@gmail.com"
+  method="POST">
 
-  <form class="contact-form">
-    <label>نام شما</label>
-    <input type="text" placeholder="نام خود را وارد کنید">
-    <label>ایمیل</label>
-    <input type="email" placeholder="ایمیل خود را وارد کنید">
-    <label>پیام</label>
-    <textarea placeholder="پیام خود را وارد کنید"></textarea>
-    <button type="submit">ارسال</button>
-  </form>
+  <label>نام شما</label>
+  <input type="text" name="name" required placeholder="نام خود را وارد کنید">
+
+  <label>ایمیل</label>
+  <input type="email" name="email" required placeholder="ایمیل خود را وارد کنید">
+
+  <label>پیام</label>
+  <textarea name="message" required placeholder="پیام خود را وارد کنید"></textarea>
+
+  <!-- تنظیمات -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="درخواست همکاری جدید">
+
+  <button type="submit">ارسال</button>
+</form>
+  
 </section>
 
 </main>
@@ -124,3 +136,4 @@ target="_blank">linkedin.com/in/mohammad-hani-aghaei-0a10513a9
 <script src="script.js"></script>
 </body>
 </html>
+<!--rebuild-->
