@@ -1,0 +1,73 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Vazirmatn","Cairo",sans-serif}
+body{background-color:#0f0f0f;color:#fff;line-height:1.8;scroll-behavior:smooth}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background-color:#000;position:sticky;top:0;z-index:100}
+.logo{font-size:20px;font-weight:700;color:#ffd700}
+.menu{display:flex;gap:24px}
+.menu a{color:#fff;text-decoration:none;font-size:14px;opacity:.9;transition:.3s}
+.menu a:hover,.menu a.active{color:#ffd700}
+.menu-btn{display:none;font-size:26px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;height:90vh;background:url('images/dubai-skyline-night.jpg') center/cover fixed no-repeat;display:flex;justify-content:center;align-items:center;text-align:center}
+.hero-content{background:rgba(0,0,0,.5);padding:40px;border-radius:12px}
+.hero h1{font-size:42px;color:#ffd700;margin-bottom:12px}
+.hero p{font-size:16px;opacity:.85}
+
+/* Sections */
+.section{max-width:900px;margin:60px auto;padding:0 24px;opacity:0;transform:translateY(50px);transition:all .8s ease-in-out}
+.section.visible{opacity:1;transform:translateY(0)}
+.section h2{font-size:26px;margin-bottom:20px;color:#ffd700}
+.section p{font-size:15px;opacity:.85}
+.about-img{width:100%;max-width:400px;margin:20px 0;border-radius:12px}
+
+/* Posts */
+.posts-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.post-card{position:relative;color:#fff;padding:20px;border-radius:12px;background-size:cover;background-position:center;transition:.4s;opacity:0;transform:translateY(50px)}
+.post-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);border-radius:12px}
+.post-card h3,.post-card p,.post-card a{position:relative;z-index:1}
+.post-card.visible{opacity:1;transform:translateY(0)}
+.post-card:hover{background-color:#222}
+.post-card a{text-decoration:none;color:#ffd700;font-weight:500}
+.post-card a:hover{text-decoration:underline}
+
+/* Contact Form */
+.contact-form{display:flex;flex-direction:column;gap:15px}
+.contact-form input,.contact-form textarea{padding:12px;border-radius:6px;border:none;font-size:14px}
+.contact-form button{padding:12px;border:none;border-radius:6px;background-color:#ffd700;color:#000;font-size:15px;cursor:pointer;transition:.3s}
+.contact-form button:hover{background-color:#e6c200}
+
+/* Footer */
+.footer{text-align:center;padding:24px;font-size:13px;background-color:#000;opacity:.9}
+
+/* Modal */
+.modal{display:none;position:fixed;z-index:200;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.8);transition:0.3s}
+.modal-content{background-color:#1a1a1a;margin:10% auto;padding:20px;border-radius:12px;width:90%;max-width:600px;color:#fff;position:relative}
+.modal-content h3{color:#ffd700;margin-bottom:15px}
+.modal-content p{line-height:1.6}
+.close{position:absolute;top:12px;right:20px;font-size:28px;color:#ffd700;cursor:pointer}
+
+/* Responsive */
+@media(max-width:768px){.menu{display:none;flex-direction:column;position:absolute;right:0;top:60px;width:100%;background-color:#000;padding:20px}.menu.open{display:flex}.menu-btn{display:block}}
+
+.contact-info a {
+  color: #facc15;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}

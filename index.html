@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد هانی آقایی قمصری | وبسایت شخصی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">فهرست</div>
+  <div class="menu-btn">☰</div>
+  <nav class="menu">
+    <a href="#hero">خانه</a>
+    <a href="#about">درباره من</a>
+    <a href="#posts">مطالب</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>محمد هانی آقایی قمصری</h1>
+  </div>
+</section>
+
+<main class="content">
+
+<section class="section about" id="about">
+  <h2>درباره من</h2>
+  <img src="images/khalifa-profile.jpg" alt="عکس پروفایل" class="about-img">
+  <p>
+    محمد هانی آقایی قمصری متولد 1385
+    در حال تحصیل در کارشناسی  در رشته علوم کامپیوتر در دانشگاه کاشان
+  </p>
+</section>
+
+<section class="section posts" id="posts">
+  <h2>مطالب اخیر</h2>
+  <div class="posts-container">
+
+    <div class="post-card" style="background-image:url('images/economic-project.jpg');" 
+         data-title="فعالیت های هنری" 
+         data-content="محمد هانی آقایی قمصری درحرفه ی بازیگری و نوازندگی و عکاسی هم فعالیت می کند می توان به بازی در سریال امیدوار ها به کارگردانی و تهیه کنندگی داریوش یاری
+         حضور داشته و همچنین در چند تیاتر در دبیرستان و دانشگاه به اجرا گذاشته است و هنچنین در نوازندگی با ساز پیانو می نوازد.">
+      <h3>فعالیت های هنری</h3>
+      <p>توضیح کوتاه درباری فعالیت‌های هنری...</p>
+      <a href="#" class="open-modal">ادامه مطلب →</a>
+    </div>
+
+    <div class="post-card" style="background-image:url('images/cultural-event.jpg');" 
+         data-title="مهارت ها"
+         data-content="زبان های برنامه نویسی 
+         C++
+         phyton
+         java
+         javascript
+         html
+         css">
+      <h3>مهارت ها</h3>
+      <p>توضیح کوتاه درباره مهارت ها ...</p>
+      <a href="#" class="open-modal">ادامه مطلب →</a>
+    </div>
+
+    <div class="post-card" style="background-image:url('images/infrastructure.jpg');" 
+         data-title="هدف ما" 
+         data-content="انجام پروژه های وب سایت برای کشور های حوزه عربی و همچنین تحصیل در رشته هوش مصنوعی در دانشگاه مسکو ">
+      <h3>هدف ما</h3>
+      <p>توضیح کوتاه درباری هدف ما ...</p>
+      <a href="#" class="open-modal">ادامه مطلب →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>تماس با من</h2>
+  <p>برای همکاری و  یا ارتیاط مستقیم  می‌توانید از راه های  زیر استفاده کنید:</p>
+
+  <div class="contact-info">
+<p>
+  ایمیل:
+  <a href="mailto://mohammadhaniaghaei2007@gmail.com">mohammadhaniaghaei2007@gmail.com</a>
+</p>
+لینکدین:
+<a 
+href="https://www.linkedin.com/in/mohammad-hani-aghaei-0a10513a9"
+target="_blank">linkedin.com/in/mohammad-hani-aghaei-0a10513a9
+</a>
+</p>
+  </div> 
+
+
+  <hr>
+
+  <form class="contact-form">
+    <label>نام شما</label>
+    <input type="text" placeholder="نام خود را وارد کنید">
+    <label>ایمیل</label>
+    <input type="email" placeholder="ایمیل خود را وارد کنید">
+    <label>پیام</label>
+    <textarea placeholder="پیام خود را وارد کنید"></textarea>
+    <button type="submit">ارسال</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>طراحی و توسعه توسط Haniaghaei</p>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-body"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
