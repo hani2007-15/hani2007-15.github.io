@@ -284,3 +284,8 @@ hr{
     font-size:30px;
   }
 }
+.section:not(.visible),
+.post-card:not(.visible) {
+  opacity: 1;
+  transform: none;
+}
