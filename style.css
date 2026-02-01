@@ -1,291 +1,84 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"Vazirmatn","Cairo",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
 }
 
-body{
-  background-color:#0f0f0f;
-  color:#fff;
-  line-height:1.8;
-  scroll-behavior:smooth;
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.8;
 }
 
 /* Header */
-.header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:16px 24px;
-  background-color:#000;
-  position:sticky;
-  top:0;
-  z-index:100;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: #000;
 }
 
-.logo{
-  font-size:20px;
-  font-weight:700;
-  color:#ffd700;
-}
-
-.menu{
-  display:flex;
-  gap:24px;
-}
-
-.menu a{
-  color:#fff;
-  text-decoration:none;
-  font-size:14px;
-  opacity:.9;
-  transition:.3s;
-}
-
-.menu a:hover,
-.menu a.active{
-  color:#ffd700;
-}
-
-.menu-btn{
-  display:none;
-  font-size:26px;
-  cursor:pointer;
+.menu a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /* Hero */
-.hero{
-  position:relative;
-  min-height:90vh;
-  background:url("images/dubai-skyline-night.jpg") center/cover no-repeat;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero-content{
-  background:rgba(0,0,0,.6);
-  padding:40px;
-  border-radius:12px;
-  max-width:600px;
-}
-
-.hero h1{
-  font-size:42px;
-  color:#ffd700;
-  margin-bottom:12px;
-}
-
-.hero p{
-  font-size:16px;
-  opacity:.85;
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
 }
 
 /* Sections */
-.section{
-  max-width:900px;
-  margin:60px auto;
-  padding:0 24px;
-  opacity:0;
-  transform:translateY(50px);
-  transition:all .8s ease-in-out;
-}
-
-.section.visible{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.section h2{
-  font-size:26px;
-  margin-bottom:20px;
-  color:#ffd700;
-}
-
-.section p{
-  font-size:15px;
-  opacity:.85;
-}
-
-.about-img{
-  width:100%;
-  max-width:400px;
-  margin:20px 0;
-  border-radius:12px;
+.section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 /* Posts */
-.posts-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.post-card{
-  position:relative;
-  color:#fff;
-  padding:20px;
-  border-radius:12px;
-  background-size:cover;
-  background-position:center;
-  transition:.4s;
-  opacity:0;
-  transform:translateY(50px);
-}
-
-.post-card::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.55);
-  border-radius:12px;
-}
-
-.post-card h3,
-.post-card p,
-.post-card a{
-  position:relative;
-  z-index:1;
-}
-
-.post-card.visible{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.post-card a{
-  text-decoration:none;
-  color:#ffd700;
-  font-weight:500;
-}
-
-.post-card a:hover{
-  text-decoration:underline;
+.post-card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
 }
 
 /* Contact */
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
+.contact-info a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .contact-form input,
-.contact-form textarea{
-  padding:12px;
-  border-radius:6px;
-  border:none;
-  font-size:14px;
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
 }
 
-.contact-form button{
-  padding:12px;
-  border:none;
-  border-radius:6px;
-  background-color:#ffd700;
-  color:#000;
-  font-size:15px;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.contact-form button:hover{
-  background-color:#e6c200;
-}
-
-.contact-info{
-  margin:20px 0;
-}
-
-.contact-info a{
-  color:#facc15;
-  font-weight:600;
-  text-decoration:none;
-}
-
-.contact-info a:hover{
-  text-decoration:underline;
-}
-
-hr{
-  margin:30px 0;
-  border:0;
-  height:1px;
-  background:rgba(255,255,255,0.2);
+.contact-form button {
+  background: #ffd700;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
 }
 
 /* Footer */
-.footer{
-  text-align:center;
-  padding:24px;
-  font-size:13px;
-  background-color:#000;
-  opacity:.9;
-}
-
-/* Modal */
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:200;
-  background-color:rgba(0,0,0,.8);
-}
-
-.modal-content{
-  background-color:#1a1a1a;
-  margin:10% auto;
-  padding:20px;
-  border-radius:12px;
-  width:90%;
-  max-width:600px;
-  color:#fff;
-  position:relative;
-}
-
-.modal-content h3{
-  color:#ffd700;
-  margin-bottom:15px;
-}
-
-.close{
-  position:absolute;
-  top:12px;
-  right:20px;
-  font-size:28px;
-  color:#ffd700;
-  cursor:pointer;
-}
-
-/* Responsive */
-@media(max-width:768px){
-  .menu{
-    display:none;
-    flex-direction:column;
-    position:absolute;
-    right:0;
-    top:60px;
-    width:100%;
-    background-color:#000;
-    padding:20px;
-  }
-
-  .menu.open{
-    display:flex;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .hero h1{
-    font-size:30px;
-  }
-}
-.section:not(.visible),
-.post-card:not(.visible) {
-  opacity: 1;
-  transform: none;
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
 }
